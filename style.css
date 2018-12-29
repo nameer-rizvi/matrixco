@@ -93,11 +93,11 @@ main {
 }
 
 #about .left {
-	padding: 182px 65px 58px 65px;
+	padding: 182px 0 58px 25px;
 	width: 50%;
 }
 
-#about .content-container {
+#about .content {
 	width: 444px;
 	margin: 0 auto;
 }
@@ -145,7 +145,7 @@ main {
 
 /* MAIN#ABOUT STYLING END */
 
-@media only screen and (max-width: 960px) {
+@media only screen and (max-width: 970px) {
 	header ul {
 		display: none;
 	}
