@@ -202,6 +202,10 @@ main ul {
 	flex-direction: column;
 }
 
+#network h1 {
+	margin-bottom: 38px;
+}
+
 #network .loc-cards {
 	display: flex;
 	flex-wrap: wrap;
