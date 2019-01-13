@@ -330,8 +330,8 @@ footer a:hover {
 	z-index: 3;
 	top: 0;
 	left: 0;
-	background-color: white;
-	opacity: 0.9;
+	background-color: #f8f8f8;
+	opacity: 1;
 	overflow-x: hidden;
 	padding-top: 60px;
 	transition: 0.5s;
@@ -344,10 +344,6 @@ footer a:hover {
 	opacity: 1;
 	text-align: center;
 	font-weight: bold;
-}
-
-.mobileNav a:hover {
-	text-decoration: underline;
 }
 
 .mobileNav .closebtn {
