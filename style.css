@@ -61,14 +61,18 @@ header h2 {
 	letter-spacing: 1px;
 }
 
+header ul,
+header label {
+	font-size: 15px;
+}
+
 header ul {
 	list-style-type: none;
 	padding: 0;
 	display: flex;
 	width: 365px;
-	justify-content: space-between;
-	font-size: 15px;
 	padding-top: 4px;
+	justify-content: space-between;
 }
 
 header a {
@@ -78,6 +82,11 @@ header a {
 
 header a:hover {
 	opacity: 0.8;
+}
+
+header label {
+	display: none;
+	cursor: pointer;
 }
 
 /* HEADER STYLING END */
@@ -130,6 +139,8 @@ main ul {
 #about .content {
 	width: 444px;
 	margin: 0 auto;
+	display: flex;
+	flex-direction: column;
 }
 
 #about .right {
@@ -161,6 +172,10 @@ main ul {
 	height: 1000px;
 }
 
+#about img#mobileImg {
+	display: none;
+}
+
 /* MAIN#ABOUT STYLING START */
 
 /* MAIN#CLIENT STYLING START */
@@ -176,9 +191,8 @@ main ul {
 }
 
 #clients .right {
-	padding: 182px 0 58px 165px;
-	flex: 1;
-	overflow: hidden;
+	margin: auto;
+	padding: 0 25px;
 }
 
 #clients ul {
@@ -305,11 +319,75 @@ footer a:hover {
 
 /* MAIN#ABOUT STYLING END */
 
-@media only screen and (max-width: 970px) {
+@media only screen and (max-width: 1020px) {
+	header .right {
+		display: none;
+	}
+	#about .content {
+		padding: 0 20px;
+	}
+	#about .left {
+		width: 100%;
+		padding-top: 90px;
+		padding-bottom: 0;
+		overflow: hidden;
+	}
+	#about .right {
+		display: none;
+	}
+	#about .divider {
+		display: none;
+	}
+	#about img#mobileImg {
+		display: block;
+		height: 600px;
+		margin: 60px auto;
+		object-fit: cover;
+	}
+	#clients img {
+		height: 600px;
+	}
+}
+
+@media screen and (max-width: 790px) {
 	header ul {
 		display: none;
 	}
-	header h2 {
-		margin-right: 0;
+	header label {
+		padding-top: 4px;
+		display: block;
+	}
+	.pakistan-group {
+		flex-direction: column;
+	}
+}
+
+@media screen and (max-width: 570px) {
+	#about .content {
+		width: initial;
+	}
+	#network {
+		padding: 70px 20px 0 20px;
+	}
+	#network #pakistan.card p.descript {
+		width: initial;
+	}
+}
+
+@media screen and (max-width: 510px) {
+	#clients {
+		flex-direction: column;
+	}
+	#clients .left {
+		width: 100%;
+		margin-bottom: 40px;
+	}
+}
+
+@media screen and (max-width: 460px) {
+	header,
+	footer {
+		padding-left: 30px;
+		padding-right: 30px;
 	}
 }
