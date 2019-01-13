@@ -1,6 +1,8 @@
 $(document).ready(function() {
   smoothScrolling();
   scrollingImg();
+  openNav();
+  closeNav();
 });
 
 function smoothScrolling() {
@@ -19,6 +21,14 @@ function smoothScrolling() {
       );
     }
   });
+}
+
+function openNav() {
+  document.getElementById("mobileNavId").style.width = "100%";
+}
+
+function closeNav() {
+  document.getElementById("mobileNavId").style.width = "0";
 }
 
 function scrollingImg() {

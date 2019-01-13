@@ -19,7 +19,16 @@
 					<li><a href="mailto:shaneezeh@matrixco.com">CONTACT</a></li>
 				</ul>
 				<div class="right"></div>
-        <label>MENU</label>
+        <label onclick="openNav()">MENU</label>
+        <div id="mobileNavId" class="mobileNav">
+          <span id="mobileNav-hover">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">X</a>
+            <a href="#about" style="opacity: 1" onclick="closeNav()">ABOUT</a>
+            <a href="#clients" onclick="closeNav()">CLIENTS</a>
+            <a href="#network" onclick="closeNav()">NETWORK</a>
+            <a href="mailto:shaneezeh@matrixco.com" onclick="closeNav()">CONTACT</a>
+          </span>
+        </div>
 		</header>
 		<main>
 				<div id="about">
