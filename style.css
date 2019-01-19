@@ -17,7 +17,7 @@ a {
 body {
 	display: flex;
 	flex-direction: column;
-	max-width: 1440px;
+	max-width: 2000px;
 	margin: auto;
 	background-color: #f8f8f8;
 	font-family: "Lato", sans-serif;
@@ -170,6 +170,11 @@ main ul {
 
 #about img {
 	height: 1000px;
+}
+
+#about img#aboutImg {
+	width: 1000px;
+	object-fit: cover;
 }
 
 #about img#mobileImg {
